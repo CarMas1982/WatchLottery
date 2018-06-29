@@ -7,9 +7,11 @@
 //
 
 import UIKit
+import GameplayKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet var result: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -20,6 +22,10 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func random(_ sender: UIButton) {
+        let cr = GKShuffledDistribution(lowestValue: 1, highestValue: 30)
+        result.text = "\(cr.nextInt())"
+    }
 
 }
 

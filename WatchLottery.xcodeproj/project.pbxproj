@@ -18,8 +18,8 @@
 		334F6CC21F0016E900248CB3 /* WatchLottery WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 334F6CC11F0016E900248CB3 /* WatchLottery WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		334F6CC91F0016E900248CB3 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334F6CC81F0016E900248CB3 /* InterfaceController.swift */; };
 		334F6CCB1F0016E900248CB3 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334F6CCA1F0016E900248CB3 /* ExtensionDelegate.swift */; };
-		334F6CCD1F0016E900248CB3 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334F6CCC1F0016E900248CB3 /* NotificationController.swift */; };
 		334F6CCF1F0016E900248CB3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 334F6CCE1F0016E900248CB3 /* Assets.xcassets */; };
+		334F6CDF1F00436400248CB3 /* WatchLottery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334F6CDE1F00436400248CB3 /* WatchLottery.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,9 +80,9 @@
 		334F6CC71F0016E900248CB3 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		334F6CC81F0016E900248CB3 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
 		334F6CCA1F0016E900248CB3 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
-		334F6CCC1F0016E900248CB3 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		334F6CCE1F0016E900248CB3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		334F6CD01F0016E900248CB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		334F6CDE1F00436400248CB3 /* WatchLottery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchLottery.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,7 +151,7 @@
 			children = (
 				334F6CC81F0016E900248CB3 /* InterfaceController.swift */,
 				334F6CCA1F0016E900248CB3 /* ExtensionDelegate.swift */,
-				334F6CCC1F0016E900248CB3 /* NotificationController.swift */,
+				334F6CDE1F00436400248CB3 /* WatchLottery.swift */,
 				334F6CCE1F0016E900248CB3 /* Assets.xcassets */,
 				334F6CD01F0016E900248CB3 /* Info.plist */,
 				334F6CC61F0016E900248CB3 /* Supporting Files */,
@@ -230,12 +230,13 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = iOSFoundation;
 				TargetAttributes = {
 					334F6C9F1F0016E900248CB3 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 93JF9LS6ZY;
+						LastSwiftMigration = 0940;
 						ProvisioningStyle = Automatic;
 					};
 					334F6CB11F0016E900248CB3 = {
@@ -246,6 +247,7 @@
 					334F6CC01F0016E900248CB3 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 93JF9LS6ZY;
+						LastSwiftMigration = 0940;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -314,9 +316,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				334F6CCD1F0016E900248CB3 /* NotificationController.swift in Sources */,
 				334F6CCB1F0016E900248CB3 /* ExtensionDelegate.swift in Sources */,
 				334F6CC91F0016E900248CB3 /* InterfaceController.swift in Sources */,
+				334F6CDF1F00436400248CB3 /* WatchLottery.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,15 +375,23 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -423,15 +433,23 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -467,7 +485,8 @@
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 3.2;
 			};
@@ -484,7 +503,8 @@
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 3.2;
 			};
@@ -535,7 +555,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = it.iosfoundation.WatchLottery;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -548,7 +569,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = it.iosfoundation.WatchLottery;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
@@ -571,6 +593,7 @@
 				334F6CD51F0016E900248CB3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		334F6CD71F0016E900248CB3 /* Build configuration list for PBXNativeTarget "WatchLottery WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -579,6 +602,7 @@
 				334F6CD91F0016E900248CB3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		334F6CDB1F0016E900248CB3 /* Build configuration list for PBXNativeTarget "WatchLottery" */ = {
 			isa = XCConfigurationList;
@@ -587,6 +611,7 @@
 				334F6CDD1F0016E900248CB3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
